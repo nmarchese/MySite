@@ -1,9 +1,38 @@
 body {
   background-color: #04002e;
 }
+
+.navBar {
+  display: block;
+  width: 100%;
+  margin-top: 2%;
+  align-self: center;
+  font-family: 'Righteous', sans-serif;
+  font-size: 130%;
+}
+
+.menu {
+  list-style: none;
+  display: block;
+}
+.menu > li {
+  float: left;
+  text-align: center;
+  padding-left: 20%;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
 .nameCubes {
-  margin-top: 17%;
+  display: block;
   margin-left: 33%;
+  margin-top: 14%;
+  font-family: 'Russo One', sans-serif;
 }
 
 .wrapFirstNameCube {
@@ -41,25 +70,25 @@ body {
 }
 
 .cube1 div {
-  background-image: url("../images/auroraBorialis1.jpg");
+  background-image: url("../images/auroraborialis1.jpg");
   background-size: contain;
   opacity: 0.9;
 }
 
 .cube2 div {
-  background-image: url("../images/auroraBorialis2.jpg");
+  background-image: url("../images/auroraborialis2.jpg");
   background-size: contain;
   opacity: 0.9;
 }
 
 .cube1 h3, .cube2 h3 {
-  font-size: 150%;
+  font-size: 200%;
   margin-top: 42%;
   text-align: center;
 }
 
 .cube2 h4 {
-  font-size: 140%;
+  font-size: 165%;
   margin-top: 42%;
   text-align: center;;
 }
@@ -84,7 +113,7 @@ body {
    to  { transform: rotateZ(  0deg ) rotateY(   0deg ) rotateX(   -360deg );}
 }
 
-.cube1{
+.cube1 {
 	animation: spinFlat 10s infinite linear;
 }
 
