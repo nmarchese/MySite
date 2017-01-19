@@ -2,35 +2,52 @@ body {
   background-color: #04002e;
 }
 
-.navBar {
-  display: block;
+.menu {
   width: 100%;
-  margin-top: 2%;
-  align-self: center;
+  position: fixed;
+  /* background-color: #04002e;   background for menu bar   */
   font-family: 'Righteous', sans-serif;
   font-size: 130%;
-}
-
-.menu {
   list-style: none;
-  display: block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 .menu > li {
   float: left;
   text-align: center;
   padding-left: 20%;
 }
-a {
-  color: white;
+li a {
+  display: block;
+  color: #777;
+  text-align: center;
+  /* background-color: #111; */
+  border-left: 1px solid rgba(0,0,0,0);
+  border-top: 1px solid rgba(0,0,0,0);
+  border-right: 1px solid #999;
+  border-bottom: 1px solid #666;
+  padding: 14px 16px;
   text-decoration: none;
 }
-a:hover {
+li a:hover {
   text-decoration: underline;
+  /*
+  border-top: 1px solid #666;
+  border-left: 1px solid #999;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #222;
+  */
+  color: #eee;
+  background-color: #111;
 }
 
+
+/* CUBES */
+/******************************************************/
 .nameCubes {
   display: block;
-  margin-left: 33%;
+  margin-left: 35%;
   margin-top: 14%;
   font-family: 'Russo One', sans-serif;
 }
@@ -119,4 +136,21 @@ a:hover {
 
 .cube2 {
   animation: spinVert 10s infinite linear;
+}
+
+.contactIcons {
+  display: block;
+  width: 100%;
+  position: fixed;
+  bottom: 17%;
+  margin-left: 40.6%;
+}
+.contactIcons a {
+  float: left;
+  margin-left: 2%;
+  font-size: 350%;
+  color: #333;
+}
+.contactIcons a:hover {
+  color: #ccc;
 }
