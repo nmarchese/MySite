@@ -1,0 +1,6 @@
+.DS_Store
+target
+bin
+LICENSE
+node_modules
+bower_components
