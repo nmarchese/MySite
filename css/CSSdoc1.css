@@ -18,9 +18,6 @@ li a {
   border-bottom: 1px solid #555;
   padding: 14px 16px;
   text-decoration: none;
-
-  display: inline-block;
-  vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
           transform: perspective(1px) translateZ(0);
 
@@ -301,8 +298,9 @@ li a:hover:before, li a:focus:before, li a:active:before {
   -webkit-transform: scale(1.07);
           transform: scale(1.07);
 }
-/***********************************************************/
 
+/* Projects */
+/***********************************************************/
 .projects {
   display: inline-block;
 }
@@ -326,13 +324,6 @@ li a:hover:before, li a:focus:before, li a:active:before {
   margin-bottom: 15px;
 }
 
-.projects-list {
-  display: inline;
-  list-style: none;
-  float: left;
-  background-color: rgba(0,0,0,0);
-}
-
 .project-link {
   color: rgba(0,0,0,0);
   height: 150px;
@@ -348,15 +339,40 @@ li a:hover:before, li a:focus:before, li a:active:before {
           transform: scale(1.03);
   color: rgba(66, 221, 163, 0.8);
 }
+.disabled:hover {
+  -webkit-transform: scale(1.0);
+          transform: scale(1.0);
+  color: rgba(170, 10, 10, 0.8);
+  cursor: not-allowed;
+}
 .go {
   padding-top: 30px;
   font-size: 80px;
+}
+.wip {
+    padding-top: 55px;
+  font-size: 45px;
 }
 .project-extra-btn {
   padding: 2px;
   margin: 5px;
   font-size: 15px;
   border-radius: 15px;
+}
+
+#s3helper {
+  background-image: url("../images/wip.png");
+  background-size: cover;
+}
+
+#dnddice {
+  background-image: url("../images/wip.png");
+  background-size: cover;
+}
+
+#issinfo {
+  background-image: url("../images/IssInfoScreen.png");
+  background-size: cover;
 }
 
 #gardenpro {
