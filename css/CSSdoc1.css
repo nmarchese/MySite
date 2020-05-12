@@ -174,19 +174,19 @@ li a:hover:before, li a:focus:before, li a:active:before {
 .cube1 div {
   background-image: url("../images/darktexture1lite.jpg");
   background-size: contain;
-  opacity: 0.7;
+  opacity: 0.75;
 }
 
 .cube2 div {
   background-image: url("../images/darktexture2lite.jpg");
   background-size: contain;
-  opacity: 0.7;
+  opacity: 0.75;
 }
 
 .cube3 div {
-  background-image: url("../images/lights1.jpg");
+  background-image: url("../images/darktexture1lite.jpg");
   background-size: contain;
-  opacity: 0.9;
+  opacity: 0.75;
 }
 
 .cube1 h3, .cube2 h3 {
@@ -310,6 +310,7 @@ li a:hover:before, li a:focus:before, li a:active:before {
   .projects {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 }
 
@@ -358,6 +359,11 @@ li a:hover:before, li a:focus:before, li a:active:before {
   border-radius: 15px;
 }
 
+#gardenpro {
+  background-image: url("../images/GardenProScreen.png");
+  background-size: cover;
+}
+
 #bingesync {
   background-image: url("../images/BingeSyncScreen.png");
   background-size: cover;
@@ -386,4 +392,8 @@ p.tech-header {
   margin-bottom: 5px;
   font-size: 25px;
   font-weight: 600;
+}
+
+h3.project-sub-section {
+  margin-bottom: 10px;
 }
