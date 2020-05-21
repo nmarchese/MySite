@@ -370,6 +370,11 @@ li a:hover:before, li a:focus:before, li a:active:before {
   background-size: cover;
 }
 
+#sudokusolver {
+  background-image: url("../images/wip.png");
+  background-size: cover;
+}
+
 #issinfo {
   background-image: url("../images/IssInfoScreen.png");
   background-size: cover;
