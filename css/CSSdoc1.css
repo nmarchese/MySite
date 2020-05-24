@@ -345,6 +345,23 @@ li a:hover:before, li a:focus:before, li a:active:before {
   color: rgba(170, 10, 10, 0.8);
   cursor: not-allowed;
 }
+.see-readme-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(52, 17, 99, 0.6);
+  color: #fff;
+  border-radius: 90px;
+  padding: 5px 0;
+  
+  position: absolute;
+  bottom: 10%;
+  top: 10%;
+  left: 50%;
+  margin-left: -60px;
+}
+.see-readme:hover .see-readme-text {
+  visibility: visible;
+}
 .go {
   padding-top: 30px;
   font-size: 80px;
@@ -371,7 +388,7 @@ li a:hover:before, li a:focus:before, li a:active:before {
 }
 
 #sudokusolver {
-  background-image: url("../images/wip.png");
+  background-image: url("../images/SudokuSolverScreen.png");
   background-size: cover;
 }
 
