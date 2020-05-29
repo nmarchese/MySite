@@ -271,36 +271,41 @@ li a:hover:before, li a:focus:before, li a:active:before {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* Contact Icons */
-/******************************************************************/
-.contactIcons {
-  display: flex;
-  justify-content: center;
-  padding-top: 2%;
+/* About */
+/***********************************************************/
+#about {
+  padding-top: 70px;
 }
-.contactIcons a {
-  float: left;
-  padding-left: 2%;
-  padding-right: 2%;
-  font-size: 350%;
-  color: #333;
-
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
+.mypic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  /* float: left; */
+  margin: 20px;
 }
-.contactIcons a:hover {
-  color: #ccc;
-
-  -webkit-transform: scale(1.07);
-          transform: scale(1.07);
+p.about {
+  text-align: justify;
+}
+#technologies {
+  padding-top: 50px;
+}
+p.tech-header {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: 600;
 }
 
 /* Projects */
 /***********************************************************/
+#portfolio {
+  padding-top: 50px;
+}
+.portfolio-section {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  background-attachment: fixed;
+}
 .projects {
   display: inline-block;
 }
@@ -311,7 +316,6 @@ li a:hover:before, li a:focus:before, li a:active:before {
     align-items: center;
   }
 }
-
 .project-container {
   text-align: center;
   width: 150px;
@@ -319,11 +323,9 @@ li a:hover:before, li a:focus:before, li a:active:before {
   margin-right: 25px;
   margin-bottom: 40px;
 }
-
 .project-header {
   margin-bottom: 15px;
 }
-
 .project-link {
   color: rgba(0,0,0,0);
   height: 150px;
@@ -376,62 +378,88 @@ li a:hover:before, li a:focus:before, li a:active:before {
   font-size: 15px;
   border-radius: 15px;
 }
-
+h3.project-sub-section {
+  margin-bottom: 10px;
+}
 #s3helper {
   background-image: url("../images/wip.png");
   background-size: cover;
 }
-
 #dnddice {
   background-image: url("../images/wip.png");
   background-size: cover;
 }
-
 #sudokusolver {
   background-image: url("../images/SudokuSolverScreen.png");
   background-size: cover;
 }
-
 #issinfo {
   background-image: url("../images/IssInfoScreen.png");
   background-size: cover;
 }
-
 #gardenpro {
   background-image: url("../images/GardenProScreen.png");
   background-size: cover;
 }
-
 #bingesync {
   background-image: url("../images/BingeSyncScreen.png");
   background-size: cover;
 }
-
 #randomnumber {
   background-image: url("../images/RandomNumberScreen.png");
   background-size: cover;
 }
-
 #presidents {
   background-image: url("../images/PresidentsScreen.png");
   background-size: cover;
 }
 
-.mypic {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
+/* Resume */
+/******************************************************************/
+#resume {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+@media (max-width: 768px) {
+  .resume-screen {
+    display: none;
+  }
+  #resume {
+    padding-top: 300px;
+    padding-bottom: 100px;
+  }
+}
+.resume-screen {
+  margin-bottom: 40px
+}
+
+/* Contact Icons */
+/******************************************************************/
+#contact {
+  padding-top: 250px;
+}
+.contactIcons {
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+}
+.contactIcons a {
   float: left;
-  margin: 20px;
-}
+  padding-left: 2%;
+  padding-right: 2%;
+  font-size: 350%;
+  color: #333;
 
-p.tech-header {
-  text-transform: uppercase;
-  margin-bottom: 5px;
-  font-size: 25px;
-  font-weight: 600;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
 }
+.contactIcons a:hover {
+  color: #ccc;
 
-h3.project-sub-section {
-  margin-bottom: 10px;
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
 }
